@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div class="progresso">
+            <div class="progresso--bar"></div>
+        </div>
+        <h1 id="title">QUIZ DO DANYELL</h1>
+        <h1 id="temaTitulo">Temas do Quiz</h1>
+
+        <select name="tema" id="tema">
+            <option value="gerais" selected>Conhecimentos Gerais</option>
+            <option value="js">JavaScript</option>
+        </select>
+        <button id="inicio">INICIAR</button>
+        <div class="areaQuest">
+            <div class="questao">...</div>
+            <div class="opcoes"></div>
+        </div>
+
+        <div class="areaPontos">
+            <img src="prize.png" class="prizeImage"/>
+            <div class="texto1">------</div>
+            <div class="porcentagem">-----</div>
+            <div class="texto2">-------</div>
+            <button>Fazer novamente</button>
+        </div>
+        <footer>Feito por mim mesmo!</footer>
+        <script src="questões/questoesGerais.js"></script>
+        <script src="questões/questoesJs.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

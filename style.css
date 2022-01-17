@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, #inicio{
+    color: #FFF;
+    margin: 20px 0;
+}
+#inicio {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 10vw;
+    height: 5vh;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    transition: all ease 0.3s;
+}
+#inicio:hover {
+    background-color: #000;
+    color: #fff;
+    width: 11vw;
+    height: 6vh;
+    cursor: pointer;
+}
+#tema {
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 17vw;
+    height: 6vh;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 10px 25px #999;
+    color: #000;
+}
+.progresso {
+    height: 5px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+.progresso--bar {
+    background-color: #00FF00;
+    width: 0%;
+    height: 100%;
+    transition: all ease .5s;
+}
+
+.areaQuest,
+.areaPontos {
+    display: none;
+}
+
+.areaQuest {
+    max-width: 500px;
+    width: 100%;
+}
+
+.questao {
+    color: #FFF;
+    font-size: 18px;
+    margin: 20px 0;
+}
+.opcao {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    color: #AAA;
+    font-size: 16px;
+    cursor: pointer;
+}
+.opcao span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin-left: 5px;
+    margin-right: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+.opcao:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.areaPontos {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px;
+    text-align: center;
+}
+.prizeImage {
+    width: auto;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.texto1 {
+    color: #000;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.porcentagem {
+    color: #0d630d;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.texto2 {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.areaPontos button {
+    border: 0;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #CCC;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.areaPontos button:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+footer {
+    margin-top: 20px;
+    color: #FFF;
+    font-size: 13px;
+}
